@@ -1,0 +1,264 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #003366;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    /* height: 90vh; */
+    min-height: 85vh;
+    background: url('https://live.staticflickr.com/916/43142094942_c28e7f61f2_h.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    max-width: 50%;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.overlay button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    margin: 10px;
+    width: 180px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1px;
+}
+
+.team-member h3 {
+    font-size: 1em;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    margin-top: 2px;
+}
+
+.team-member .role {
+    background-color: #007bff;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+}
+
+#contact input[type="submit"] {
+  background-color: #4cad4f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus{
+  outline: none;
+  border-color: rgba(76, 175, 80, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#searchResults {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 400px;
+    background-color: transparent;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.suggestion-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.suggestion-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.suggestion-item .content {
+    padding: 15px;
+}
+
+.suggestion-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+h3 {
+    color: #333;
+}
+
+.suggestion-item p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.suggestion-item .visit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+}

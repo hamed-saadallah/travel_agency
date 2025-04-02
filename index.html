@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">TravelBloom</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter a destination or keyword" onkeydown="if (event.key === 'Enter') { loadSuggestions(); }">
+            <button onclick="loadSuggestions()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </div>
+        <div id="searchResults"> 
+            <div class="suggestion-item">
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="overlay">
+            <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+            <button>BOOK NOW</button>
+        </div>
+        <div id="suggestions">
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+</body>
+</html>
