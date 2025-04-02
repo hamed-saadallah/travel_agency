@@ -27,16 +27,13 @@ function loadSuggestions() {
             .then(data => {
                 // Clear previous results
                 searchResultsDiv.innerHTML = '';
-                //console.log(data);
 
                 if( searchTerm in data || (data['countries'].find( (country) => country.name.toLowerCase() === searchTerm ) != undefined) ) 
                 {
                     const suggestions = (searchTerm in data)? data[searchTerm] : (data['countries'].find( (country) => country.name.toLowerCase() === searchTerm )).cities;
-                    //console.log(suggestions);
                     
                     // Create suggestion items based on the data
                     suggestions.forEach(item => {
-                        //console.log(item);
                         const suggestionItem = document.createElement('div');
                         suggestionItem.className = 'suggestion-item';
 
